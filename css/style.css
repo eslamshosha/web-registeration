@@ -874,6 +874,7 @@ textarea.form-input {
   /* flex-wrap: wrap; */
   /* width: 100%; */
   overflow-x: auto;
+  margin-inline-end: 5px;
 }
 .select2-container--default
   .select2-selection--multiple
