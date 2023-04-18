@@ -103,7 +103,7 @@ html[dir="ltr"] .progress-bar {
   width: 100%;
   position: relative;
   text-align: start;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 .logo-ancor {
   display: inline-block;
@@ -554,7 +554,7 @@ select {
   vertical-align: middle;
   text-align: center;
 }
-.select2-results__option[aria-selected="true"]:before {
+.select2-results__option--selected:before {
   content: "\f00c";
   font-family: "line Awesome Free";
   font-weight: bold;
@@ -597,7 +597,7 @@ select {
 .select2-container--default
   .select2-selection--multiple
   .select2-selection__choice {
-  padding-left: 10px;
+  padding-inline-end: 15px;
 }
 .select2-container--default
   .select2-selection--multiple
@@ -867,4 +867,22 @@ textarea.form-input {
   text-align: start;
   line-height: 22px;
   margin-bottom: 20px;
+}
+/**/
+.select2-container .select2-selection--multiple .select2-selection__rendered,
+.select2-container .select2-selection--single .select2-selection__rendered {
+  /* flex-wrap: wrap; */
+  /* width: 100%; */
+  overflow-x: auto;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice,
+.select2-container--default[dir="rtl"]
+  .select2-selection--multiple
+  .select2-selection__choice {
+  flex-shrink: 0;
+}
+.select2-container--open .select2-selection.select2-selection--multiple .select2-search.select2-search--inline, .select2-container--open .select2-selection.select2-selection--single .select2-search.select2-search--inline{
+  min-width: 100px;
 }
